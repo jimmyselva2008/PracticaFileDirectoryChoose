@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuempresa.practicafiledirectorychoose.RegistroProyectoController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Registro de Proyectos">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="315.0" endY="7.62939453125E-6" layoutX="115.0" layoutY="55.0" startX="-100.0" />
+      <VBox layoutX="15.0" layoutY="68.0" prefHeight="201.0" prefWidth="416.0" spacing="10.0">
+         <children>
+            <Label text="Nombre del Proyecto:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombre" prefHeight="26.0" prefWidth="416.0" promptText="Nombre del Proyecto" />
+            <Label text="Responsable:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtResponsable" promptText="Nombre del Responsable" />
+            <Label text="Descripción:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescripcion" prefHeight="37.0" prefWidth="416.0" promptText="Descripcion breve del proyecto" />
+         </children>
+      </VBox>
+      <VBox layoutX="15.0" layoutY="274.0" prefHeight="125.0" prefWidth="294.0" spacing="10.0">
+         <children>
+            <Label text="Directorio del proyecto">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtArchivo" editable="false" promptText="Seleccione un archivo" />
+            <Label text="Archivo de Requerimientos:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDirectorio" editable="false" prefHeight="26.0" prefWidth="150.0" promptText="Seleccione un directorio" />
+         </children>
+      </VBox>
+      <VBox layoutX="317.0" layoutY="304.0" prefHeight="94.0" prefWidth="124.0" spacing="35.0">
+         <children>
+            <Button fx:id="btnArchivo" mnemonicParsing="false" onAction="#seleccionarArchivo" prefHeight="26.0" prefWidth="117.0" text="Seleccionar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDirectorio" mnemonicParsing="false" onAction="#seleccionarDirectorio" prefHeight="26.0" prefWidth="115.0" text="Seleccionar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Line endX="315.0" endY="7.62939453125E-6" layoutX="116.0" layoutY="403.0" startX="-100.0" />
+      <HBox layoutX="15.0" layoutY="418.0" prefHeight="27.0" prefWidth="234.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarRegistro" prefHeight="26.0" prefWidth="123.0" text="Guardar Registro">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="26.0" prefWidth="90.0" text="Limpiar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
