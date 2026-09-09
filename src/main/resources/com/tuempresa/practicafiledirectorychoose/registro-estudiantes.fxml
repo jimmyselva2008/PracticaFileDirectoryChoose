@@ -45,7 +45,7 @@
          </children>
       </VBox>
       <Line endX="456.20001220703125" endY="7.62939453125E-6" layoutX="115.0" layoutY="52.0" startX="-100.0" />
-      <TableView fx:id="tblEstudiantes" layoutX="17.0" layoutY="222.0" prefHeight="200.0" prefWidth="558.0">
+      <TableView fx:id="tblEstudiantes" layoutX="17.0" layoutY="254.0" prefHeight="168.0" prefWidth="558.0">
         <columns>
           <TableColumn fx:id="colCif" prefWidth="75.0" text="CIF" />
           <TableColumn fx:id="colNombre" prefWidth="223.2000274658203" text="Nombre Completo" />
@@ -53,5 +53,18 @@
             <TableColumn fx:id="colCorreo" prefWidth="141.20001220703125" text="Correo" />
         </columns>
       </TableView>
+      <HBox layoutX="159.0" layoutY="213.0" prefHeight="30.0" prefWidth="276.0" spacing="50.0">
+         <children>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarRegistro" text="Guardar Registro">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="26.0" prefWidth="101.0" text="Limpiar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children></HBox>
    </children>
 </AnchorPane>

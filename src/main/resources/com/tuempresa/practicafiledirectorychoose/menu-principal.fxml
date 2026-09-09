@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.tuempresa.practicafiledirectorychoose.MenuPrincipalApplication"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuempresa.practicafiledirectorychoose.MenuPrincipalController">
+   <children>
+      <MenuBar fx:id="mnbMenu" layoutY="1.0">
+        <menus>
+          <Menu fx:id="mnuRegistros" mnemonicParsing="false" text="Registros">
+            <items>
+              <MenuItem fx:id="miProyectos" mnemonicParsing="false" onAction="#abrirProyectos" text="Proyectos" />
+                  <MenuItem fx:id="miEstudiantes" mnemonicParsing="false" onAction="#abrirEstudiantes" text="Estudiantes" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnuAyuda" mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem fx:id="miAcercaDe" mnemonicParsing="false" onAction="#mostrarAcercaDe" text="Acerca de" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </children>
 </AnchorPane>
