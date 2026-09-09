@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="444.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuempresa.practicafiledirectorychoose.RegistroEstudiantesController">
+   <children>
+      <Label layoutX="186.0" layoutY="14.0" text="Registro de Estudiantes" textFill="#122aa1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox layoutX="139.0" layoutY="67.0" prefHeight="146.0" prefWidth="435.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txtCif" />
+            <TextField fx:id="txtNombre" />
+            <TextField fx:id="txtCarrera" />
+            <TextField fx:id="txtCorreo" />
+         </children>
+      </VBox>
+      <VBox layoutX="25.0" layoutY="67.0" prefHeight="146.0" prefWidth="114.0" spacing="20.0">
+         <children>
+            <Label fx:id="lblCif" text="CIF:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNombre" text="Nombre Completo:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCarrera" text="Carrera:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCorreo" text="Correo:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Line endX="456.20001220703125" endY="7.62939453125E-6" layoutX="115.0" layoutY="52.0" startX="-100.0" />
+      <TableView fx:id="tblEstudiantes" layoutX="17.0" layoutY="222.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="colCif" prefWidth="75.0" text="CIF" />
+          <TableColumn fx:id="colNombre" prefWidth="223.2000274658203" text="Nombre Completo" />
+            <TableColumn fx:id="colCarrera" minWidth="0.0" prefWidth="118.4000244140625" text="Carrera" />
+            <TableColumn fx:id="colCorreo" prefWidth="141.20001220703125" text="Correo" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
